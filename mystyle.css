@@ -10,10 +10,28 @@ body {
   background-color: rgb(0, 0, 0);
 }
 
+header {
+  background-color: rgb(189, 171, 198);
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/fruit-salad.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 h1 {
-    font-family: 'Caveat';
-  color: rgb(255, 255, 255);
-  text-align: center;
+    font-family: 'Verdana';
+    font-size: 10vw;
+    /*background-color: rgba(190, 186, 186, 0.361);
+    padding: 10px 20px;
+    border-radius: 30px;*/
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 0px 0px 10px rgb(68, 14, 68);
 }
 
 .flex-container{
@@ -23,8 +41,8 @@ h1 {
   gap: 30px;
 }
 .flex-item {
-  font-family: 'Times New Roman';
-  font-size: 150px;
+  font-family: 'Verdana';
+  font-size: 5vw;
   width: 300px;
 
   flex-basis: calc(52.1% - 30px - 20px);
@@ -76,4 +94,24 @@ img.GrapeImage{
 }
 img.WatermelonImage{
     width: 50%;
+}
+footer {
+  background-color: black;
+  color: rgb(204, 143, 184);
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  font-family: fantasy;
+}
+footer a{
+  color: rgb(204, 143, 184);
+  text-decoration: none;
+}
+footer a:hover{
+  text-decoration: underline;
+}
+@media screen AND (max-width: 600px) AND (orientation: portrait){
+  .flex-item{
+    flex-basis: 100%;
+  }
 }
